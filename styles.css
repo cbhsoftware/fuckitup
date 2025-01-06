@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+/* Background Image */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bottley.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+/* Centered Content Box */
+.content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px; /* Fixed width for a consistent layout */
+}
+
+/* Profile Picture */
+.profile-picture {
+    margin-bottom: 15px;
+}
+
+.profile-picture img {
+    width: 100px; /* Adjust size */
+    height: 100px; /* Adjust size */
+    border-radius: 50%; /* Makes it a circle */
+    border: 3px solid #fff; /* Optional border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c5ce7; /* Purple button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00cec9; /* Light teal on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+    }
+
+    .profile-picture img {
+        width: 80px; /* Smaller for mobile */
+        height: 80px;
+    }
+}
